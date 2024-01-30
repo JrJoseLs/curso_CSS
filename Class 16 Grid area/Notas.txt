@@ -1,0 +1,66 @@
+para trabajar con GRI AREA
+    primero lo definimos como;
+            display: grid;
+
+        y para trabajar
+            grid-templete-areas;
+    Divide con areas como si fueran nombre:
+        grid-templete-areas; 
+        "header header header"
+        "aside main main"
+        "aside main main"
+
+
+--------------------------------------------------------
+Un poco aparte este tema se llama nombre de las lineas... "GRID LINES"
+ex:
+
+/*GRID LINES*/
+.grid-container2 {
+    background: #444;
+    display: grid;
+    grid-template-rows: 
+    [f-line]
+    150px 
+    [s-line]
+    150px 
+    [t-line]
+    150px
+    [f-line];
+    grid-template-columns: 
+    [linea-derecha]
+    150px 
+    150px 
+    150px
+    [fin-del-main];
+    border: 5px solid #000;
+    
+}
+
+.grid-item2 {
+    border: 1px solid #000;
+    background: lightblue;
+}
+
+.grid-item2:first-child {
+    background: red;
+    grid-row: f-line/s-line;
+    grid-column: linea-derecha/fin-del-main;
+}
+
+
+--------------SHORTHAND-----------------------
+proxima clase los shorthand...
+    esto abrevia 3 propiedades en 1: "_grid-template: row / columns (grid-container)"
+                                    "_grid-template: area unidad
+
+                    No recomendable es confusa....
+
+-----
+    Tambien esta la propiedad "GRID"
+        abrevia todo lo visto en grid area, row, colums, etc...
+
+
+
+--------------------------------------------------------------
+Proxima class "7:40:06" - Responsive Design

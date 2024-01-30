@@ -1,0 +1,32 @@
+GRID: (es un estilo de layout (+ u - nav o barra de navegacion) = es un valor de propiedad "display")
+conceptos basicos:
+    grid container = es todo lo que contine la nav o layout
+    grid item = son c/u de los elementos del contianer
+    grid cell = c/u de las celdas o divisiones 
+    grid tracks (colum y row) = filas y columnas del container (filas + columnas = grid tracks)
+    grid area = son areas seleccionadas concecutivas, puede ser una seccin de la pantalla, son definidas por nosotros no por default, ocupan mas de una celda, seran filas o columnas.
+    grid line (colum line y row line) = colum line linas de la columna y row line lineas de las filas
+
+Propiedades
+    grid-template-rows (grid-container)
+    grid-template-colums (grid-container)
+
+    grid-row-gap (grid-container) = es como la distancia que habra entre celdas
+    grid-column-gap (grid-container)
+    grid-gap: row colum (grid-container)
+
+    grid-row-start (gird-item) = para que una celda ocupe mas tamaño o mas de una columna
+    grid-row-end (gird-item) = lo mismo
+    grid-colum-start (gird-item) = lo mismo
+    grid-colum-start (gird-item)
+    grid-row (gird-item)
+    grid-colum (gird-item)
+    
+-------------------------------------
+
+
+    Otra forma de crear columnas
+    Ex:
+            grid-template-columns: 150px 150px 150px 1fr;
+            para hacer esos mismo mas facil, usamos parametros con la funcion repeat
+            grid-template-columns: repeat(3, 150px) 1fr;

@@ -1,0 +1,54 @@
+Otras propiedades, funciones y selectores curiosos de curiosos..
+
+
+Direcction: ltr     /   rtl     /       initial     / inherit;
+    posiciona left to right, right to left, etc...
+
+letter: spacing
+    separa la cantidad que se le indique
+
+
+scroll-behavior
+    smootea el efecto del scroll "mas u menos"
+
+user-selected:      none                   
+    impedir que selecciones letras.
+
+text-shadow
+
+
+---attr() -----
+        es complejo y inutil, por eso no la explico
+
+Selectores:
+    mas selectores en w3shools
+    todas las formas de selectionar en css, firts child, class, etc...
+
+
+
+
+Hasta aqui el curso de css
+
+-----next class, pagina web con css ......
+        (no se hizo la web, se practica con editar una web osea: analizar estructura y modificar un poco)
+
+
+
+---------------------------
+como seguir aprendiendo?
+    siempre revisar documentacion, para saber en que casos se puede aplicar una cosa o que no, depende del navegador etc..
+
+si quiero que para navegador sea red y para otro blue (no solo color, otras propiedades, etc..)
+puedo: 
+    ex: Mozilla y google chrome
+-moz-color: red;
+-webkit-color: green;
+color: blue
+
+
+Y seguir aprendiendo y adaptarse al cambio...
+
+
+
+
+

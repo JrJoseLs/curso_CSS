@@ -1,0 +1,105 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+body{
+    background: radial-gradient(circle,#fff,#bbb);
+}
+
+/*Lo ideal seria darle a la fila del header y al footer medidas fijas*/
+.grid-container {
+    background: #444;
+    margin: 10px;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+    grid-template-rows: repeat(auto-filñ, 1fr);
+    height: 92vh;
+    border: 5px solid #000;
+    
+}
+
+.grid-item {
+    padding: 18px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.grid-footer {
+    background-color: #6f9;
+    grid-area: footer;
+}
+.grid-header {
+    background-color: #f96;
+    grid-area: header;
+}
+.grid-main {
+    background-color: #96f;
+    grid-area: main;
+}
+.grid-aside {
+    background-color: #999;
+    grid-area: aside;
+}
+
+
+
+/*GRID LINES*/
+.grid-container2 {
+    background: #444;
+    display: grid;
+    grid-template-rows: 
+    [f-line]
+    150px 
+    [s-line]
+    150px 
+    [t-line]
+    150px
+    [f-line];
+    grid-template-columns: 
+    [linea-derecha]
+    150px 
+    150px 
+    150px
+    [fin-del-main];
+    border: 5px solid #000;
+    
+}
+
+.grid-item2 {
+    border: 1px solid #000;
+    background: lightblue;
+}
+
+.grid-item2:first-child {
+    background: red;
+    grid-row: f-line/s-line;
+    grid-column: linea-derecha/fin-del-main;
+}
+
+
+
+/*SHORTAND*/
+.grid-container3 {
+    background: #444;
+    display: grid;
+    grid-template: repeat(auto-fill, 1fr);
+    
+}
+
+.grid-item3 {
+    border: 1px solid #000;
+    background: lightblue;
+}
+
+.grid-item3:first-child {
+    background: red;
+    grid-row: f-line/s-line;
+    grid-column: 1/4;
+}

@@ -1,0 +1,138 @@
+Css, espara agarrar las etiquetas de html y darle estilo, sombra color, borde, etc...
+	css = cascading stylesheets = hojas de estilo en cascadas. 
+		esto es definir los estilos pasos por pasos.
+
+	h1 = rojo
+	tamaño 100px
+
+
+
+con html pondremos todos lo elementos de nuestra pagina, luego con css le damos estilo, color, tamaño, tipo de letra, etc...
+	estilo del formulario balbalblabla
+
+
+
+
+	para enlasar el "html" con css
+hay 4 formas para escribir css
+1- archivos externos en linea
+	<p style="color:red"> = todo el parrafo sera rojo
+2- definidos por la etiqueta style
+	<style type="text/css"
+3- archivo esterno con la etiqueta link
+	lo mas comun y lo normal es: <link rel="stylesheet" type="text/css" href="">
+4- import, menos recomendado
+	@import blablbla
+
+
+
+
+-------------------------------------
+Usamos
+3- archivo esterno con la etiqueta link
+	lo mas comun y lo normal es: <link rel="stylesheet" type="text/css" href="">
+
+
+la estrutura de css
+selector{
+	propiedad:valor;
+}
+
+ejemplo:
+a{
+	color:red;
+}
+
+***CSS selector//selectores
+
+1. Universal - es = * = seleciona todos los elementos, la popiedad es - color: y el valor red; o rojo o #f00;
+*{
+	color:red;
+}
+
+2. de tipo - son los que se seleccionan por elemento, button, h2, h1 etc..
+h2{
+	color:red;
+}
+
+3. Clases - agregar el atributo class="titulo-h2" o h3, button, etc...
+.titulo-h2{
+	color:red;
+}
+
+4. Id - para elemento con id usamos #id-elemento, puede ser id="element-for-modify"; pero es mejor usar un solo id por elemento, para evitar problemas con js:
+id="element-for-modify"
+id="element-for-modify2"
+	asi es correto
+#id-element{
+	color:red;
+}
+
+5. por atributo - nombre de etiqueta, atributo y valor de atributo; como hacer una etiqueta de html
+ejemplo:
+<h2 id="element-for-modify" atributo="si">H2 con css clases</h2>
+[atributo="si"]{
+	color: red;
+}
+
+	
+
+
+6. descendiente -podemos selecionar por desencientes y pseudo clases....
+<h2><p>con desencientes y p</p></h2>
+	<h2><b>con desendientes y b</b></h2>
+
+	si quiero modificar los p dentro de los h2 o lo que sea.
+h2 p {
+	color: green;
+}
+
+h2 b {
+	color: darkcyan;
+}
+
+
+tambien si esta en clase
+.h2-class p
+ {
+	color: darkcyan;
+}
+
+<h2><p>con desencientes y p<span>tetas</span></p></h2>
+h2 p span
+{
+	color: red;
+}
+
+
+
+7. pseudo-clases - otra forma de selectionar, activer, hover etc... En un evento se genera una seleccion
+que cambie cuando pase el mouse por ensima de algun elemento
+.h2-class b: hover 
+ {
+	color: darkcyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

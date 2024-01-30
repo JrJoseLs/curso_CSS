@@ -1,0 +1,44 @@
+Filter como su nombre indica es una forma de dar filtros...
+filter puede funcionar como transform (varias propiedades juntas)
+filter: brightmess(2) contrast (10) blur 1;
+    filter: 
+        none
+
+        blur(px)
+            desenfoca
+
+        brightmess(0-1)
+            escala de brillo
+
+        contrast (number or %)
+            contraste
+
+        drop-shadow(medidas)
+            sombra debajo como box shadow, pero el drop la da el efecto a los png...
+
+        grayscale(%)
+            cambia todo a gris o blanco y negro.
+
+        hue-rotate(deg)
+            rota la gama de colores
+
+        invert(%)
+            invierte los colores
+
+        opacity (%)
+            opacidad sin mas 
+
+        saturate(%)
+            satura el elemento, osea concentra mas sus colores.
+
+        sepia(%)
+                convierte todo en sepia y ya :v...
+
+        url("filters.svg#filter-id")
+                No es muy usado, pero nama se debe buscar un tutorial, IMAGINO QUE DEBEN SER FILTROS YA HECHOS QUE APARECEN POR LA WEB....
+
+
+
+
+
+                

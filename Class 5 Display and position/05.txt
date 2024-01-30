@@ -1,0 +1,293 @@
+
+1.53.57
+----------------display y position
+
+outline;
+	esto es un sorhan = una propiedad acortada; ejemplo border-color o lo que sea: border; 1px red; acortar
+
+ejemplo: en vez de;
+.caja1{
+	width: 200px;
+	height: 200px;
+}
+
+.caja2{
+	width: 200px;
+	height: 200px;
+}
+
+	ponemos
+
+.caja1, caja2{
+	width: 200px;
+	height: 200px;
+}
+
+	con esto evita mover la caja como hace "border"
+
+
+
+cuando pongo 
+div {
+	width: 200px;
+	height: 200px;
+	background: yellow;
+	display: inline-block;
+
+}
+.caja1{
+	outline: 5px solid red;
+}
+	esta caja no tendra marcado el borde completo solo a la mitad a diferenicia de la ultima caja de la linea
+.caja4{
+	outline: 5px solid red;
+}
+
+	esto se empleca porque en z index; pero para solucionarlo pongo
+.caja1{
+	outline: 5px solid red;
+	position: relative;
+}
+--------------------------------------------------------------------------
+
+
+
+position:
+	agarra el elemento y lo posiciona; top, botton, left, right.
+	lleva el flow segun esten las caja
+
+	static =
+	relative =
+	absolute = 
+	fixed = 
+	sticky = 
+
+
+.caja1{
+	background: red;
+	top: 20px;
+}
+
+.caja2{
+	background: yellow;
+	position: relative;
+	top: 20px;				la caja 2 se mueve a diferencia de la caja 1, por el position relative y con absolute se mueve pero py disminuye el tamaño
+
+}
+
+.caja3{
+	background: blueviolet;
+}
+
+.caja4{
+	background: green;
+}
+
+------posicionando la caja tras la otra, es como un z index
+.caja2{
+	background: yellow;
+	position: relative;
+	top: 60px;
+	left: 20px;
+
+}
+
+.caja3{
+	background-color: lightblue;
+	position: relative;
+}
+
+		si queiro poner la caja 2 por ensima, agrego = z-index: 1; = pero no seria estetico, tambien a caja 3 le puedo agregar el z-index 
+
+
+
+.caja2{
+	background: yellow;
+	position: relative;
+	top: 60px;
+	left: 20px;
+	z-index:100
+
+}
+
+.caja3{
+	background-color: lightblue;
+	position: relative;
+	z-index: 10
+}
+
+
+
+
+
+
+1.18.53
+--------------------------------------------------------------------------
+
+Z-INDEX
+	solo elementos posicionados
+	conflictos de hijos y padres
+
+--------------------------------------------------------------------------
+Display
+	block
+	inline
+	inline-block
+	table
+	inline-table
+	list-item
+	table-cell
+	table-row
+	table-colum
+	
+	grid
+--------------------------------------------------------------------------
+
+si una caja esta posicionada y la otra no, a las demas cajas les afecta, pero a la caja hijo no....
+	para poner el contendedor por arriba, el hijo le damos -1 y a la otro no z index
+			ejemplo:
+				.contenedor {
+				width: 300px;
+				height: 300px;
+				background: blue;
+				margin: 40px;
+				position: relative;
+			}
+
+			.hijo{
+				background-color: orange;
+				width: 120px;
+				height: 120px;
+				position: relative;
+				top: -20px;
+				left: -20px;
+				z-index: -1;
+			}
+
+
+--------------------------------------------------------------------
+
+"el opacity en css va de 0 hasta el 1, y podemos usar "." en vez de "0"."
+-**El viewpot es todo lo que se puede ver en la pagina**-
+------------------------------------------------------
+
+
+-------------POSITION ABSOLUTE-----------------
+	es como position relattive, aqui 2 cosas que cambian 
+		con postion absolute la pongo por debajo mas facil que con lo z-index "creo"
+
+			si tenemos las cajas dentro de un contenedor, el postion absolute se posiciona en segun el contendedor
+			esti cuando no se define, top, left, botton o right...
+			Pues con absolute tambien se ajusta todo al tamaño de la caja 
+				ejemplo:
+				div {
+				width: 160px;
+				height: 160px;
+				display: block;
+				background: yellow;
+				position: absolute;
+				}
+				.contenedor {
+					margin: 100px;
+					position: static;
+				}
+
+
+
+				.caja1 {
+					background-color: orange;
+				}
+
+				.caja2 {
+					background-color: green;
+
+				}
+
+				.caja3 {
+					background-color: lightblue;
+
+				}
+
+
+
+-----------fixed----------------
+al igual que absolute, pero este solo deja fijado. como vainsa de publicidad, que bajas en una pagina y se queda la publicidad quieta o directamente baja contigo
+
+
+----------por ultimo en los position: sticky -------------
+este es una mezcla entre relative and fixed
+	conserva el espacio, no lo pierde como el absolute etc...
+		definir en que momento de la pagina va estar fijo como publicidad... o barra de navegacion, etc...
+
+
+
+--------Ahora la propiedad mas compleja y necesaria para entender CSS "Display"----------------
+		modifica el comportamiento de una caja, relaciones, tienen muchas propiedades, "block e inline" son los naturales
+			"inline block" = solo ancho y largo, dimensiones de la caja y con el "inline" = no podemos 
+			Table = que se comporte como tabla
+			inline table = que se comporte como tabla en linea
+			List item
+			se comporta como c/u de las celadas
+			row = como filas en vertical
+			colum = columnas 
+
+			Mas usadas; block, inline, inline-block, flex, grid, inline-flex, inline-grid, vainas de esto con container, blablablabla
+
+
+
+
+
+
+
+
+
+			TIP: Control + F = y todas las veces donde diga algo que quiero cambiar y control + H por lo que lo quiero cambiar
+
+
+
+
+-------------------OVERFLOW-----------------
+es la barra de scroll, es como hacer algo con lo que sobra "osea lo que sale de la pantalla"
+OVERFLOW: auto, scroll, auto, etc... tambien hidden para ocultar la baarra.
+	tenemos: averflow-y y overflow-x
+
+
+-------------------FLOAT: (left, right, none, inherit)-----------------
+mejor uso para el float: 
+ejemplo:
+<div class="cont">
+	<img src="https://www.copahost.com/blog/wp-content/uploads/2019/07/imgsize2.png" alt="">
+	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ea, tempore rem ab molestias
+	iure, eius odio, iusto quasi dicta facilis? A facilis odio soluta voluptatem itaque. Aut, consectetur eius!
+	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ea, tempore rem ab molestias
+	iure, eius odio, iusto quasi dicta facilis? A facilis odio soluta voluptatem itaque. Aut, consectetur eius!
+	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ea, tempore rem ab molestias
+	iure, eius odio, iusto quasi dicta facilis? A facilis odio soluta voluptatem itaque. Aut, consectetur eius!
+	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ea, tempore rem ab molestias
+	iure, eius odio, iusto quasi dicta facilis? A facilis odio soluta voluptatem itaque. Aut, consectetur eius!
+	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ea, tempore rem ab molestias
+	iure, eius odio, iusto quasi dicta facilis? A facilis odio soluta voluptatem itaque. Aut, consectetur eius!
+	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ea, tempore rem ab molestias
+	iure, eius odio, iusto quasi dicta facilis? A facilis odio soluta voluptatem itaque. Aut, consectetur eius!
+	
+</div>
+------css
+.cont{
+	margin: auto;
+	margin-top: 50px;
+	border: 4px solid red;
+	background: grey;
+	width: 50%;
+	padding: 20px;
+}
+
+.cont img {
+	float: right;
+	width: 600px;
+	margin-right: 18px;
+
+}
+
+
+
+-------------Prox class Pseudo elementos

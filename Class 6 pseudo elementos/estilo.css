@@ -1,0 +1,152 @@
+* {
+    font-family: 'lobster', cursive;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+/*Pesudo elementos, firts-letter + firts-line*/
+/*.texto {
+    padding: 20px;
+}
+
+.texto::first-letter {
+    color: aquamarine;
+    font-size: 2em;
+}
+.texto::first-line {
+    color: blue;
+    font-size: 2em;
+}*/
+
+/*Pseudo elementos: placeholder*/
+/*form {
+    margin: 100px auto;
+    display: block;
+    background-color: grey;
+    padding: 100px;
+    width: 50%;
+}
+
+input {
+    padding: 6px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: red;
+    font-size: 1.4m;
+    background-color: yellow;
+}*/
+
+/*Pseudo elementos: selecttion*/
+/*form {
+    margin: 100px auto;
+    display: block;
+    background-color: grey;
+    padding: 100px;
+    width: 50%;
+}
+
+input {
+    padding: 6px;
+    width: 100%;
+}
+
+input::selection {
+    color: red;
+    font-size: 1.4m;
+    background-color: yellow;
+}*/
+
+/*Peudo elemento o modificacion de pesudo elementos "after", "before"*/
+/*form {
+    margin: 100px auto;
+    display: block;
+    background-color: #666;
+    padding: 100px;
+    width: 50%;
+}
+
+b {
+    padding: 6px;
+    width: 100%;
+}
+
+b::before {
+    content: "me suscribi";
+    color: #fff;
+}
+
+b::after {
+    content: "un canal de Yt";
+    color: red;
+}*/
+
+
+/*pseudo clases hover + link */
+/*.caja1{
+    height: 200px;
+    width: 200px;
+    background: slateblue;
+    /*transition: background 1s, height 1s, width 1s;*/
+/*    transition: all 1s;
+    border: 3px solid red;
+}
+
+.caja1:hover{
+    background-color: darkgoldenrod;
+    height: 300px;
+    width: 300px;
+    border: 3px solid blue;
+    border-color: blue;
+
+}
+
+a {
+    color: green;
+}
+a:link {
+    color: red;
+    background-color: blue;
+}
+
+a:visited {
+    color: violet;
+    background-color: black;    
+}
+*/
+
+/*active + focus*/
+.caja {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    margin: 25px;
+    transition: ALL 1s;
+}
+
+.caja:active {
+    background: blue;
+    width: 400px;
+}
+
+input {
+    margin: 25px;
+    background: lightcyan;
+    transition: background 1s, padding 0.4s;
+}
+        
+input:focus {
+    background: lightgray;
+    padding: 20px;
+}
+
+.caja1 {
+    margin: 25px;
+}
+
+.caja1 b:lang(en){
+    background: red;
+    padding: 20px;
+    
+} 

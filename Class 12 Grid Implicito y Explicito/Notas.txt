@@ -1,0 +1,13 @@
+Grid Implicito y Explicito
+
+si tenemos un item de mas fuera de los definidos, ese item no forma parte del grid Implicito
+Es decir si de un grupo de celdas nos queda una afuera, esta comieza a formar porte del grid Implicito
+
+Para esas celdas que sobnan, tenemos 3 propiedades nuevas:
+    Grid-auto-rows = es igual a grid template row
+    Grid-auto-colum = igual a su equivalente        = estas 3 solo para programar grid Implicito...
+    Grid-auto-flow = 
+    
+
+    Auto colum solo crea una nueva ficolumna la y auto row tamaño de las celdas o fila
+    Grid auto flow "dense "rellena los espacios vacios

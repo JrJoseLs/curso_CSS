@@ -1,0 +1,23 @@
+*{
+	/*padding: 0px;
+	margin: 0px;*/
+
+	font-family: 'lobster', cursive;
+	font-weight: 100;
+	
+}
+
+.contact-form{
+	font-size: 25px;
+	background-color: #blanchedalmond;
+	width: 50vw;
+	height: 50vh;
+}
+
+.contact-form__h2 {
+	font-size: 2em;
+	color: skyblue;
+
+
+}
+

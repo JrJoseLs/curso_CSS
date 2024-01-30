@@ -1,0 +1,34 @@
+Flexbox o grid
+Flexbox = cajas flexibles
+    vainas pa maquetado y formularios, vaina de tablas
+    require de 2 cosas flex container y flex item
+        2 direcciones como eje "x" y "y" el main axis = eje x; el cross axis = eje y
+
+        propiedades: 
+            flex-direction
+            flex-wrap: no-wrap, wrap, wrap-reverse; = "si tienen el item algo dentro al cambiar el tamaño o resolucion de pagina, se mantiene de en su forma"
+            flex-flow: flex-dorection, flex-wrap = "con flex flow puedo simplemente ponerlo y usar elemento de flex direction y flex wrap"
+            justigy-content: center, space-arrpund, space-between, space-evenly (main axis) = esta es para centrarl contenido.
+
+
+         Aling items: 
+                flex start, 
+                center, 
+                flex end, 
+                stretch, 
+                baseline (cross axis)
+
+        Aling content: lo mismo 
+
+
+PROPIEDADES DE LOS ITEMS:
+    aling-self: podemos elegir una caja y tirarla debajo.
+    margin = dentro de una caja flexible funciona diferente. si le doy; "margin-left: auto;" = en vez de ir a la iquieda c arroja al aldo contrario, al igual pasa con "top y botton". /(esto solo dentro de lo flex) 
+        flex grow = agarra el espacio sobrante y lo reparte entre las cajas que quedan.
+        flex basis = es como el width pero esta es para el flex y es mas importante.
+        flex shrink = decide cuanto espacio va a ocupara c/u.
+        
+        flex: = flex grow = esta agrupa las 3 propiedades anteriores en una sola
+            ejemplo:
+                flex: 1 0 350px; = flex-grow 1, flex-shrink 0, flex-basis 300px. (solo necesita 1 parametro)
+        order = como z indez, pero el eje apunta en el main axis (eje z), el del valor mas grande estara al final.

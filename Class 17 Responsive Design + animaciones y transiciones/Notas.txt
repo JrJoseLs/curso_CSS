@@ -1,0 +1,122 @@
+Resposive desing:
+    lo de siempre qu nuestra web se adapte segun la resolucion de dispositvos
+    Estructuras, contenedores, images y videos flexible, etc...
+
+@media que se usa para consultas de medios para aplicar diferentes estilos diferentes para tipos de medios
+_ancho y alto de ventana grafica
+_ancho y alto del dispositvo
+_orientacion
+_resolucion
+
+------------------------------------
+
+all
+    aptop para todos los dispositvos
+
+print
+    destina a material impreso y vizualizacion de documentos en una pantalla en el modo de vista prevista de impresion
+
+screen
+    destinado principalmente a las antallas
+
+speech
+    destinado a sintetizadores de vizualizacion
+
+--------------------------------
+
+OPERADORES AND / OR 
+    AND = se cumplen las 2 conciones
+    OR = se cumple una o la otra.
+
+
+
+orientacion: landscape y portatit
+    landscape = cuando es mas ancho que largo (paisaje)
+    portatit = lo contrario (retrato)
+
+    ---------------------
+    Resposive desing se usa con javascripts, explotar al maximo css no es posible sin js...
+
+
+
+
+
+---------------METODOLOGIA TRABAJANDO CON RESPOSIVE-------------
+Mobile firts = primero para mobile, 
+    primero celular, luego tableta, pc, ultra wight etc....
+
+Desktop firts = primero pc escritorio, luego a mobile....
+
+
+    siempre es mas recomendable mobile firts...
+
+
+Luego:
+content firts = que se encargar primero del contenido y luego trabaja a partir de hay...
+
+
+
+------
+media query:
+@media 
+
+Se puede trabajar con gird y flexible
+    con flex queda mejor estructurado...
+
+
+--------------------------------------------------------
+
+
+
+
+
+
+
+------------------------TRANSITION-------------8.08.05-------------------------
+transition-property: property/ies - all - none
+transition-duration: diration/s 
+transition-delay: delay/s 
+
+transition-timing-funtion: linear / ease / ease-in / ease-out / step-satrt / step-end / steps(int, start/end) / initial / inherit;
+            esta es ña transisicion en funcion del tiempo (curva de vesier)
+transition:
+
+
+
+
+
+----------------------ANIMACIONES-------8:23:31 - Animaciones--------------------------------
+como las transiciones pero con otras reglas, propiedades, etc...
+
+propiedad o regla diferente llamada
+@Keyframes
+
+animation-name: name
+
+animation-duration: diration/s 
+animation-delay: delay/s 
+
+animation-timing-funtion: (transition values)
+animation-interation-count: number;
+        ("las veces que se repetira la animaicon")...
+
+animation-fill-mode / forwards / backwards / both / initial / inherit;
+        ("define el modo final, como va a quedarse")...
+            forwards: mas usada, se queda como se definio en la ultima instancia...
+            both: es como comienza...
+            ++Mas usadas both y forwards
+
+
+animation-diretion: normal / reverse / alternate / alternarte reverse
+
+
+
+
+
+------------------CUBIC BEZIER----------------
+es para trabajar con animacione y transisiones, que es un valor del 
+    "animation-timing-funtion" y "transition-timing-funtion"
+ex:
+    animation-timing-function: cubic-bezier(0.4,0.23,0.76,1.51);
+}
+    

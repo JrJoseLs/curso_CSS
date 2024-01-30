@@ -1,0 +1,150 @@
+1.17.20
+------------Normalize y teoria de cajas---------------
+
+Los navegadore traen cosas por defectos, si mi texto y titulo esta en negro, asi como el espacio, distacia entre titulo y borde de la pagina,etc... 
+Todo tipo de mierdas que este en la pagina, es porque asi lo ve por defecto el navegador (todo las propiedades por defecto en c/u de los elementos)
+	con el normalize.css-----corrijo todo eso 
+		lo incluto en el proyecto con
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	tambien lo incluimos con el enlace
+		https://necolas.github.io/normalize.css/8.0.1/normalize.css
+
+		en el archivo normalize. buscar img y agregar "max-width: 100%"
+		y agregar border box con: "box-sizing: border-box;" = esto para que la caja siempre sea de un tamaño... y cuando agrege padding o otra cosa no cambie.
+					tambien:  "padding: 0;"		"  margin: 0;"
+	y LISTO SE PUEDE EMPEZAR A TRABAJAR DESDE 0 CON CSS...
+
+
+
+
+
+
+
+
+
+----------TEORIA DE CAJAS*------------------------
+ya esplicado en el curso de html, hay 2 tipos de cajas en todo html
+	las que son en linea y la que son en bloque.
+		bloque mas importante, siempre se ajustan al ancho del contenedor; por default al ancho de la ventana o pagina o bloque que cree dentro de esta, es decir
+			si creo un elemento de 20px el otro elemento sera de 20px, ejemplo como h2 ocupa todo un bloque a diferencia del b que solo el tamaño asignado o por default
+
+Pero tambien puedo hacer que "b", se comporte como "h2" y vicebersa.
+
+	para hacer que el "h2", se comporte como elementos en linea usamos la propiedad "displlay": esto permite cambiar el comportamiento de la caja
+		ejemplo:
+			h2 {
+			display: block; === display: inline;
+			}
+
+	al "h2" no se le puede dar "height" por que es un elemento en bloque pero "p" si
+			p {
+			height: 400px;
+			}
+
+
+
+
+
+----------PROPIEDADES DE CAJAS----------------
+	son las que modifican o afectan a las cajas, su entorno o contorno...
+
+
+	background-color: red; = me permite cambiar el color del elemento
+	"padding" = es la distancia entre el borde y el texto; hay 4 padding; padding lef, padding top, padding rigth y padding botton... (arriba, abajo, izquieda y derecha)
+
+
+para evitar poner: 
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-left: 30px;
+
+	para acomodar cajas, solo hacemos: "padding: 20px;" = y nos evitamos todo el lio...
+	asi; arriba y abajo solamente: "padding: 20px 30px;"
+	para diferentes medidas para todos son: "20px 30px 40px 10px" = es decir; arriba, derecha, abajo y izquierda...
+	si pongo solo 3; el del medio define el 4to: "10px 20px 30px"...
+
+
+
+	height: 100px; = alto
+	width: 100px; = ancho
+
+	si agrefo height y widht = agrega mas forma al padding y se suman pero con:
+	box-sizing: content-box; o border box para sumar tamaño coherente o balbalbla.
+
+	con text aling controlamos el texto de la caja: "text-align: center;"
+
+
+	"margin": El margin hace todo lo contrario; es la distancia entre 2 cajas, si es de 0 la cajas estaran pegadas, pues no existe distancia que la separa, pero es igual que el "padding" en elementos.
+		es padding pero con margin
+
+	"Border radius" = redondear el borde : "border-radius: 10px;" = redondea un poco.... y "border-radius: 50%" = hace circulos directamente
+	"Border" = propiedad cortada tiene de todo; widht, style, etc....
+		para simplificar; "border: 4px solid, double, dasher, etc.. + el color " = border.
+
+	box model = modelo de trabajo de cajas: propiedades:
+		content
+		padding
+		border
+		margin
+		su jerarquia se aplica uno por encima del otro:
+			conttent se modifica con line-height.
+			border con border
+			padding con padding y margin con margin....
+
+
+	box shadow:
+		con esta propiedad permite dar sombra a la caja
+	"box-shadow: 2px 4px 15px 0 color" = eje x, eje y, desenfoque, el borde y el color...
+	text-shadow; lo mismo pero con el texto...
+	example:
+		box-shadow: 30px 20px 10px 10px #000;
+		text-shadow: 2px 2px 7px #fff;
+			si quiero intensificar el efecto, pongo "coma" y pego = text-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff;
+
+
+	transform: rotate(90deg); esto para rotar; comando mas los grados
+
+
+
+
+1.53.57
+----------------Prox display y position
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

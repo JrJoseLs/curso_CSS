@@ -1,0 +1,38 @@
+pseudo elementos:
+    es un elemento que no es un elemento :v, nmms es como el outline vez cambio visial pero no....
+    no funciona en inlene depue en todo, los pseudo elementos se aplican a los elementos.
+        no c aplica sin un elemento...
+
+
+
+
+        Los elemebntos que tenemos son:
+        ::firts-letter + firts-line = para la primera letra y para la 1ra linea
+
+        ::placeholder = para los inputs 
+        ::selecttion = para cuando seleccionas con el mouse algun elemento
+
+        ::after = hijos de elementos al que aplicacmos al pseudo elemento, la modificacion del pseudo elemento
+        ::before = lo mismo que after basicamente :vez
+
+
+--------------Pseudo clases--------------
+    casi lo mismo que el pseudo elemento blablablbla
+    :hover = escucha el evento cuando el mouse esta en sima
+    :link = un link que aun no visitamos <a>
+    :visited = cambia el color del link cuando visitamos una pagina
+    :active = al dejar apretado un boton cambia el estilo.
+    :focus = se aplica a los inputs, 
+    :lang = es un parametro, y se debe indicar en que lenguaje quiero modificar el estilo, español(es), english(en), etc...
+
+
+
+
+
+    */*
+    propiedad transition, nos permite cambiar la velocidad que tienen las transiciones en la pagina
+    */*
+
+
+3.43.32h
+    --------------prox object fit: Fil

@@ -1,0 +1,295 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+.div-resposive {
+    background: #c95;
+}
+
+@media screen and (min-width: 400px) and (max-width: 650px) {
+    .div-resposive {
+        background: red;
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 800px) {
+    .div-resposive {
+        background: green;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200) {
+    .div-resposive {
+        background: orange;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .div-resposive {
+        background: #000;
+    }
+}
+
+
+/*WebResponsive*/
+.contetn {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.header, .main, .aside, .footer {
+    padding: 20px;
+}
+.header {
+    background: lightblue;
+    flex-basis: 60px;
+}
+.main {
+    background: lightcyan;
+    flex-basis: 300px;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+.aside {
+    background: darkcyan;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.footer {
+    background: darkgray;
+    flex-grow: 1;
+}
+
+
+/*responsive con flex*/
+/*@media screen and (max-width: 700px) {
+   .contetn {
+        flex-direction: row;
+        flex-wrap: wrap;
+   }
+   .main {
+    flex-grow: 4;
+   }
+   .aside {
+    flex-grow: 1;
+   }
+   .header {
+        flex-basis: 100%;
+        max-height: 60px;
+   }
+   .footer {
+        flex-basis: 100%;
+
+   }
+}*/
+
+/*responsive con Grid*/
+@media screen and (max-width: 700px) {
+   .contetn {
+    display: grid;
+    grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+    grid-template-columns: repeat(3,1fr);
+   }
+
+   .header {
+    grid-column: 1 / span 3;
+   }
+   .main {
+    grid-row: 2 / 6;
+    grid-column: 1 / span 2;
+   }
+   .aside {
+    grid-row: 2 / 6;
+   }
+   .footer {
+    grid-row: 6 / 7;
+    grid-column: 1 / span 3;
+   }
+}
+
+/*----------------------------------*/
+
+/*TRANSITION*/
+.container{
+    background: #b6f;
+    padding: 20px 10px;
+}
+
+.caja {
+    background: #025;
+    height: 80px;
+    width: 80px;
+    /*transition-property: background;*/
+    transition-property: left, background;
+    transition-duration: 1s, 3s;
+    /*transition-delay: 0.5s;*/
+    margin: 20px;
+
+    /*background: inherit;
+    border: 1px solid #000;*/
+
+    position: relative;
+    left: 0;
+}
+
+/*.caja:hover {
+   /* background: lightcyan;
+   /*left: 80%; /*no recomendable*/
+/*}*/
+
+.container:hover > .caja {
+    left: 80%;
+    background: #fff;
+}
+
+.caja:first-child {
+    transition-timing-function: linear;
+}
+.caja:nth-child(2) {
+    transition-timing-function: ease;
+}
+.caja:nth-child(3) {
+    transition-timing-function: ease-in;
+}
+.caja:nth-child(4) {
+    transition-timing-function: ease-out ;
+}
+
+.caja:nth-child(5) {
+    transition-timing-function: ease-in-out;
+}
+
+
+/*-------------------------------*/
+/*Animation*/
+/*.container2 {
+    padding: 20px 5px;
+    background: #86f;
+}
+
+.caja2 {
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    animation-name: desplazarse;
+    animation-duration: 3s;
+
+    animation-iteration-count: 1; /*las veces que se repite la animaicon*/
+    /*animation-direction: normal;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+}
+
+@keyframes desplazarse {
+    /*from {
+        position: relative;
+        left: 0;
+
+    }
+    to {
+        left: 90%;
+    }*/
+
+    /*LO MISMO QUE "from y to", pero podemos manejar mas el cambio de la animacion*/
+    /*0% {
+        position: relative;
+        left: 0;
+    }
+    50% {
+        background: #c95;
+    }
+    100% {
+        left: 80%;
+        background: green;
+    }
+}*/
+
+
+
+
+/*CUBIC BEZIER*/
+.container3 {
+    padding: 20px 5px;
+    background: #86f;
+}
+
+.caja3 {
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    animation-name: desplazarse;
+    animation-duration: 2s;
+
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(0.4,0.23,0.76,1.51);
+}
+
+@keyframes desplazarse {
+    0% {
+        position: relative;
+        left: 0;
+    }
+    50% {
+        background: #c95;
+    }
+    100% {
+        left: 80%;
+        background: green;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*botton*/
+li {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    position: relative;
+    left: 0;
+}
+
+li :hover{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 13px 27px;
+
+    font-size: 11px;
+}

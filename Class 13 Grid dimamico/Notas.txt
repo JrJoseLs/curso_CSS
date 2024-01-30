@@ -1,0 +1,11 @@
+Grid dinamico para trabajar con estrutura y acomodar todo a como se me de la gana
+"estrutura dinamica definida por el navegador o como la ponga yo v:"
+
+Propiedades: (son valores que se ponen en el repeat)---
+minmax = ajusta el contenido minimo y maximo
+min-content = ajustar al contenido al minimo de espacio (celda, columna blabalbla)
+max-content = x2 pero al maximo
+
+cantidades: (o se ajusten o que generen mas columnas o filas)
+auto-fill = genereal las cantidades de columnas que pueda que cumplan las propiedades.
+auto-fit = simplemente lo escala

@@ -1,0 +1,128 @@
+transform es una propiedad que no permite transformar el objeto:
+    transform: translateX(100%);
+                translatey  px etc..
+                transform: translate(100%, 100%);
+
+    transform: scale (number);
+            para asignar el tamaño
+                scaleX (number)
+                ScaleY (number)
+
+    transform: skew(10deg);
+            deg = grados
+            grad = gradiales
+            rad = radiales
+
+en el 8:49:30 
+podemos bucar "clip path generator" en google y mejorar las transform
+    y copiamos y pegamos el deseado :v
+
+Hay generadores de todo tipos, sombras, etc...
+
+
+PARA TRABAJAR ANIMACIONES CON TRANSFORM "TRANSLATE"ES LA MEJOR OPCION
+    porque nos ahorra muchisimos recursos...
+
+
+    + propiedades de transform en:
+        www.w3schools.com 
+            y fultrasmos por transform...
+
+
+
+
+
+
+
+
+
+----------------------BACKGROUND----------------------
+Background-color
+Background-image-url()
+    con "Background-size" = ajustamos la imagen
+        Background-size: 100%;
+        Background-size: 100% 100%;
+
+    Pero mejor usar el cover:
+        Background-size: cover;
+
+    pero para ajustar al 100% del contenido
+        Background-size: contain;
+
+    En cazo de que la imagen se repita:
+        Background-repeat: no-repeat;
+
+    si se queremos que se repita
+        Background-repeat: repeat;
+------------------------
+
+clip: dice desde donde mostrar la imagen
+Background-clip
+        border-box  /   padding-box     /    content-box
+
+borde-box = muestras la img desde los bordes.
+padding-box = muestra la img desde relleno.
+content-box = desde el contenido.
+
+
+Background-origin:
+    hace lo mismo que clip, pero no recorta la imagen
+            border-box  /   padding-box     /    content-box
+
+
+----------------------------
+difrencias entre clip y  origin
+"clip" = recorta la imagen.
+"origin" = la crea a partir de (border, etc...).
+
+
+
+---------------------------------------------------
+Background-position: (left - top - botton - right - center ++ left - top - right - center)
+
+
+----
+Background-attachment: scroll
+        toma como referencia el contenedor
+                        fixed
+        toma como referencia, el viewport (se queda fija la imagen)
+
+
+
+
+
+
+
+
+
+
+
+-----------------------VARIABLES----------------------
+son los espacios que se almacenan en memoria
+
+2 tipos de variables, simples y globales
+    globales; pueden usarse desde cualquier elemento.
+    
+    ex: definir una variable 
+        :root {
+            --color-rojo: #f40;
+        }
+
+        .container {
+            Background: var (--color-rojo)
+        }
+
+
+
+
+
+
+
+Next class filter
+
+
+
+
+
+
+

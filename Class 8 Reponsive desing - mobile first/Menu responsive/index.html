@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Iconos y estilo-->
+    <script src="https://kit.fontawesome.com/e65e4a6dc0.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--iconos-->
+    <link rel="stylesheet" href="estilo.css">
+    <!--normalize-->
+    <link rel="stylesheet" href="normalize.css">
+
+    <title>Menu responsive sin javascript</title>
+</head>
+<body>
+    <!--Menu resposive sin javascript, obviamente no es la forma optima-->
+<header>
+    <nav class="nav">
+        <u class="nav__ul">
+            <li class="nav__li"><i class="fas fa-home"></i><a href="">Inicio</a></li>
+            <li class="nav__li"><i class="fas fa-user-astronaut"></i><a href="">Sobre nosotros</a></li>
+            <li class="nav__li"><i class="fas fa-coins"></i><a href="">Gana dinero</a></li>
+            <li class="nav__li"><i class="fas fa-question-circle"></i><a href="">Ayuda</a></li>
+
+        <ul class="nav__responsive-ul">
+            <div class="nav__resposive-button-container">
+                <div class="nav__responsive-button fas far-bars"></div>
+            </div>
+            <div class="nav__li-container">
+                <li class="nav__responsive-li"><i class="fas fa-home"></i><a href="">Inicio</a></li>
+                <li class="nav__responsive-li"><i class="fas fa-user-astronaut"></i><a href="">Sobre nosotros</a></li>
+                <li class="nav__responsive-li"><i class="fas fa-coins"></i><a href="">Gana dinero</a></li>
+                <li class="nav__responsive-li"><i class="fas fa-question-circle"></i><a href="">Ayuda</a></li>
+            </div>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>

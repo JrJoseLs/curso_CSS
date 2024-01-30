@@ -1,0 +1,34 @@
+prpieddad - objetct fil: (se aplica para resoluciones de imagenes)
+    contain = viene default (este ajusta la imagen al contenido (se ajusta))
+    cover = este ajusta la imagen al contenedor (una caja de un widht y height de 100 la imagen lo sera tambien)
+    none = no aplica na y se queda la imagen como mejor convenga 
+    scale-down = se queda con la mejor propiedad, entre; "contain o none"
+
+Objet-position:
+    left - right - top - button
+    PX - EM - % - ETC...
+
+esta para dar posicion a la imagen dentro del la caja ("contenido").
+
+
+
+
+
+
+cursor:
+editar el curosr sin mas, dar flow 
+    lista de cursor:
+        https://www.w3schools.com/cssref/tryit.asp?filename=trycss_cursor
+
+
+
+
+Colores:
+    color name
+    gexadecimal
+    rgb = red, green, blue (tambien es como hexadecimal) rgb (0,0,0) = rojo, verde, azul, maximo en valores 0 - 255
+    rgba = igual pero (0,0,0 .0) el punto es a para opacidad
+    hsl = hexadecimal 3 y 4 valores ejemplo, #fff
+    hsla = hexadecimal con la opacidad 4 valores #ffff
+        colores para css:
+            https://htmlcolorcodes.com/es/

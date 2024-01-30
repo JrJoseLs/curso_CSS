@@ -1,0 +1,41 @@
+Hay alineacion para todos los items, "general": FLex-box, columnas y filasm contenedor y la individual a cada item por separado....
+En grid usamos justify items y se comportan como flex
+
+podemos usar para ajustar los items
+    justify-items: center;
+    justify-items: start;
+    justify-items: flex-start;
+    justify-items: end;
+    justify-items: flex-end;
+    justify-items: stretch;
+
+
+Aling-items: center;
+Aling-items: end;
+
+etc...
+
+Para aliniar columnas y filas 
+justify-content 
+aling-content  
+    propiedades que no reciben los items, solo content...
+        = space-around, space-between, space-evenly... center, etc..
+
+
+------------------------
+Aling-self = alinea individualmente los items
+justify-self = 
+pace-self = es una abreviatura para usar aling y justify self...
+    en vez de:
+    align-self: start;
+    justify-self: end;
+            place-self: start end;
+
+
+
+stretch (default) -start - center - end
+--------------------------
+
+
+_order (igual a flex)
+    cambiar de lugar el item

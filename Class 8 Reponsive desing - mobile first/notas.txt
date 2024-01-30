@@ -1,0 +1,47 @@
+Responsive desing - mobile firts
+    es un concepto que trabajo con distinta resoluciones,
+    adapta una resolucion a varios dispositivos...
+
+mobile-firts:
+    Es vicebersa de mobile a table y luego desktop
+        esto se usa asi porque google recomienda mas facil estas paginas ""el ceo de estas paginas mobile en ese orden a nivel de posicionamiento es mejor""
+            (posicionamiento web organico)
+
+
+--------
+Limitar un minimo de resolucion de la pantalla, para cambiar el estilo de caja al que se adapte
+ejemplo:
+    @media only screen and (mex-width: 800px) {
+        div{
+            display: block;
+            width: 100%;
+        }
+    }
+
+
+meta viwport: esta etiqueta es para resoluciones originales del celular:
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+ahora hacer un menu responsive sin javascript; complicado de cojones, pero se ace
+
+
+para trabajar con iconos en font awesome:
+https://fontawesome.com/
+    del curso:
+        <script src="https://kit.fontawesome.com/e65e4a6dc0.js" crossorigin="anonymous"></script>
+        
+        ejemplo:
+        icon name = fas fas-home = <li class="nav__li fas fa-home"><a href="">Inicio</a></li>
+            ojo tambien dentro de una calse se puede poner mas de una solo dejando un espacio entre ellas
+                pero meor asi:
+                <li class="nav__li"><i class="fas fa-home"></i><a href="">Inicio</a></li>
+
+
+
+
+Bregando una web basica solo html y css.
+    en proble de @media
+    en lugar de "@media only screen and (max-width: 500px)" pone "@media (max-width: 500px)" si es que estas usando Visual Studio Code

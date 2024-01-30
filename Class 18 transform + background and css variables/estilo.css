@@ -1,0 +1,77 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+}
+
+.container {
+    padding: 20px 5px;
+    background: #86f;
+}
+
+.caja {
+    background: #025;
+    height: 80px;
+    width: 80px;
+    margin: 20px;
+    display: flex;
+    color: #fff;
+    transition: transform 1s
+    
+}
+
+.caja:hover {
+    transform: skew(10deg);
+}
+
+b {
+    margin: auto;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+}
+
+a {
+    background: lightblue;
+    padding: 10px;
+}
+
+
+/*BACKGROUND*/
+.container2 {
+    padding: 20px 5px;
+    background: #86f;
+    width: 800px;
+    height: 500px;
+    margin: 40px 0;
+    background-image: url(https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbHBhcGVyJTIwNGt8ZW58MHx8MHx8&w=1000&q=80);
+    /*background-size: 100% 100%;
+    /*background-size: contain;*/
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-clip: padding-box;
+    background-size: 100px;
+    background-position: center center;
+    border: 20px solid transparent;*/
+
+    background-attachment: fixed;
+}
+
+/*VARIABLES*/
+:root {
+    --color-rojo-claro: #f44;
+    --color-azul-claro: #66f;
+}
+
+div {
+    padding: 30px;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+}
+.container3 {
+    background: var(--color-rojo-claro);
+}
+
+.container4 {
+    background: var(--color-azul-claro);;
+}

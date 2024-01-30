@@ -1,0 +1,60 @@
+* {
+    font-family: 'lobster', cursive;
+    font-weight: 100;
+    font-size: 20px;
+    background: black;
+}
+
+
+/*object fil and objet position*/
+/*.caja {
+    margin: 25px;
+    width: 300px;
+    height: 360px;
+}
+
+.caja img {
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    object-fit: cover;
+}*/
+
+/*object fil and objet position*/
+/*.caja {
+    display: flex;
+    height: 250px;
+}
+
+.caja div {
+    flex: 1;
+    display: flex;
+}
+
+.caja img {
+    object-fit: cover;
+}*/
+
+
+
+/*cursor*/ /*colores*/
+.caja {
+    margin: 45px;
+    width: 200px;
+    height: 300px;
+    border: 5px solid #294040;
+    cursor: pointer;
+
+    /*RGB and RGBA*/
+    /*background: rgb(100,30,225);*/
+    /*background: rgba(100,30,255,2);
+    opacity: 1;*/
+
+    /*HEXADECIMAL*/
+    background: #402d29;
+}
+
+.caja:active {
+    cursor: progress;
+}
+

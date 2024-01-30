@@ -1,0 +1,36 @@
+h1{
+	color: darkcyan;
+}
+
+[atributo="color-blue"]{
+	color: blueviolet;
+}
+
+#color-green{
+	color: green;
+}
+
+h2{
+	color: darkcyan;
+}
+
+h2 p{
+	color: blue;
+}
+
+.h2-class
+{
+	color: yellowgreen;
+}
+
+.h2p-class p{
+	color: brown;
+}
+
+.h2p-class p span{
+	color: greenyellow;
+}
+
+p: hover{
+	color: blue;
+}

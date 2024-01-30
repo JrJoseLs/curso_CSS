@@ -1,0 +1,140 @@
+que es la especificidad:
+	es una solucion para dejar claro algunas cosas, como que elemento quiero que solo conserve un color sin afectar al resto o 
+		cambiar la propiedad sin afectar al resto, segun rango de jerarquia.
+
+
+bajo
+	-pseudo-elementos
+	-elementos
+meido
+	-atributos
+	-peudo clases
+	-clases
+alto
+	-identificadores
+	-estilos en linea
+	-important
+
+ejemplo:
+h1{
+	color: darkred;
+}
+
+le doi una clase al h1 y cambia la prioridad del color.
+
+.color-red{
+	color: blueviolet;
+}
+
+
+
+agrego atributo que se cambia porque no entra en conflicto por el mimso nivel jeraquico
+[atributo="color-blue"]{
+	color: blueviolet;
+}
+
+y pongo un id que es de mayor nivel jerarquico y sustituye
+#color-green{
+	color: green;
+}
+
+Solo supera al "id" es el style o estilo en linea...
+<h1 class="color-red" atributo="color-blue" id="color-green" style="color: yellow;">My webb + css</h1>
+
+al estilo enlinea le gana al important
+h1{
+	color: darkcyan !important
+}
+
+		no recomendable usar el important... no c cambia blablablabla...
+
+
+
+
+
+-------------------------------------------METODOLOGIA BEM-----------------------------------------------------------------------------------------
+Es para evitar todas las clases y conflictos que se vieron en especificidad, se basa en el nombre de la calse para saber que elemento estoy selecionando
+
+	ejemplo:
+<div class="contact-form">
+		<input type="text" class="contact-form__input">
+		<input type="text" class="contact-form__input">
+		<input type="text" class="contact-form__input">
+		<input type="text" class="contact-form__input">
+		<input type="text" class="contact-form__input">
+		<input type="password" class="contact-form__input">
+	</div>
+
+usamos form el nombre del bloque = form__input; asi aplicamos BEM y asi editamos todo con css...
+
+	si tenemos muchos inputs y solo el primero le queremos cambiar algo.
+<div class="contact-form">
+		<input type="text" class="contact-form__input">
+		<input type="text" class="contact-form__input">
+		<input type="text" class="contact-form__input">
+		<input type="text" class="contact-form__input">
+		<input type="text" class="contact-form__input">
+		<input type="password" class="contact-form__input">
+	</div>
+en css:
+contact-form__input:first-child{
+	color: blue;
+}
+
+Tambien
+<input type="text" class="contact-form__input--active">
+css:
+contact-form__input--active{
+	color: blue;
+}
+
+
+----------------------------------------
+<p class="contact-form__p"></p>
+		<h2 class="contact-form__p-h2"></h2>
+
+
+
+next
+
+
+--------------MEDIDAS PARA LETRAS ETC...-------------------
+
+
+
+
+-----------------------------PROPIEDADES BASICA DE TEXTO---------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

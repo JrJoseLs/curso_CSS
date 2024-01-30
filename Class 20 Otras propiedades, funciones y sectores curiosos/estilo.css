@@ -1,0 +1,21 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100;
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 20px;
+    background: #59f;
+    font-size: 20px;
+    /*direction: rtl;*/
+    letter-spacing: 10px;
+}
+
+#content {
+    background: red;
+    user-select: none;
+} 
+
+
+

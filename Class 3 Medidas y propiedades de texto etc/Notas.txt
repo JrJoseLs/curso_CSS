@@ -1,0 +1,108 @@
+
+--------------MEDIDAS PARA LETRAS ETC...-------------------
+
+cada medida tiene su uso correspondiente
+	2 uniddades de medidas;
+	-relativas: estas son las que dependen de algo, las que son variables.
+	-fijas: estas se quedan tal cual, pixeles, centimetros, blablabal.
+
+la propiedad font-size:
+.contact-form__h2{
+	font-size: 30px
+}
+	es para cambiar el tamaño de la letra
+
+px = pixeles
+cm = centimetro
+mm = milimetro
+pt = puntos
+
+las medidas relativas se adaptan en pc como en movile
+	responsive :v
+
+
+Medidas relativas 
+REM y EM
+5em  = un em por default son 6px = 5em = 5 x 16px = 80px
+ejempl:
+.contact-form{
+	font-size: 25px;
+}
+.contact-form__h2{
+	font-size: 1em
+}
+
+hereda la propiedad de la clase contenedora
+
+mas medidas relativas
+*{
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+.contact-form{
+	font-size: 25px;
+	background-color: #000; = color de fondo
+	width: 50vw; = ancho de la pantalla
+	height: 50vh; = alto de la pantalla
+}
+	tambien podemos usar porcentajes %, porcentaje de la caja que la continen (50%)
+
+
+
+
+-----------------------------PROPIEDADES BASICA DE TEXTO---------------
+
+propiedades de letras 
+.contact-form__h2 {
+	font-size: 2em;
+	font-family: Tipografia; = tipo de letra, arial, calibro, georgia, etc...
+	font-height: 1.9; = ocupa espacios hacia laterales y hacia a arriba y abajo "o sera la medida de la letra si 2, mide 1px arriba y 1px abajo"
+	font-wight: normal = amenta el grosor del height
+	font-stretch: normal; = es inutil
+	font-variant: small-caps; ) tambien es inutil
+}
+--
+para expotar tipografias en google fonts
+copiamos en css y lo pegamos en el head
+
+
+
+1.17.20
+------------Normalice y teoria de cajas---------------
+
+
+siguiente clase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
